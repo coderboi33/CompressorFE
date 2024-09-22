@@ -13,7 +13,7 @@ const PDFCompressor = () => {
         formData.append('pdf', file);
 
         try {
-            const response = await axios.post('https://compressorbe-1.onrender.com', formData, {
+            const response = await axios.post('https://compressorbe-1.onrender.com/compress', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
                 responseType: 'blob',
             });
